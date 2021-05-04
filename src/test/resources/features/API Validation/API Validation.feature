@@ -2,14 +2,18 @@ Feature: API Validation
   
 
  
+ @TestCase_01  @Test
+  Scenario: Validate API details
+    Given I trigger the get API
+    Then I verify API statuscode
+    Then I verify title
 
-#Tasks
 
-  Scenario: Success status code
-  Given validate the Status code of the API 
-  When I try to get all the Response Header 
-  Then I try to verify the response header
-  When Fetch all the Usertitles from the response body
+  @TestCase_02  @Test
+  Scenario: Validate userid
+    Given I trigger the get API
+    Then I verify API statuscode
+    And I verify userid
 
   
   

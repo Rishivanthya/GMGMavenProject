@@ -7,6 +7,8 @@
   <version>2.0.0</version>
   <name>SeleniumEasyTest2</name>
 
+
+
 	<dependencies>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -52,6 +54,14 @@
 		    <version>4.13</version>
 		    <scope>test</scope>
 		</dependency>
+		
+		
+
+<dependency>
+    <groupId>io.appium</groupId>
+    <artifactId>java-client</artifactId>
+    <version>7.5.1</version>
+</dependency>
 
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -69,6 +79,8 @@
 	</dependencies>
 
     <build>
+    
+    <defaultGoal>install</defaultGoal>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -115,5 +127,9 @@
 			</plugin>
 
 		</plugins>
+		
     </build>
+    
+    
+		
 </project>

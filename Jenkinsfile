@@ -1,7 +1,7 @@
 node {
     def mvnHome
     stage('Git') {
-        git 'https://github.com/Rishivanthya/GMG-Automation-Assignment.git'
+        git 'https://github.com/Rishivanthya/GMGMavenProject.git'
         mvnHome = tool 'M3'
     }
     stage('Test') {
